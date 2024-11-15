@@ -1,0 +1,4 @@
+[build]
+    base = "01-Login"
+    command = "printf '{\"domain\":\"%s\", \"clientId\":\"%s\"}' \"${AUTH0_DOMAIN}\" \"${AUTH0_CLIENT_ID}\" > auth_config.json && npm install && npm run build"
+    publish = "dist"
